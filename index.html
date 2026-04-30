@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bright Home | بريت هوم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rtl">
+
+    <!-- Header العائم -->
+    <header id="main-header">
+        <div class="container header-content">
+            <!-- اللوجو -->
+            <div class="logo-area">
+                <div class="logo-box" id="logo-click">
+                    <img src="images/logo.png" alt="Bright Home" class="main-logo">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name" data-i18n="brand_name">بريت هوم</span>
+                    <small class="brand-sub" data-i18n="brand_sub">لخدمات التنظيف العامة</small>
+                </div>
+            </div>
+
+            <!-- الناف بار (يظهر في اللابتوب فقط) -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+                    <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+                    <li><a href="#why-us" data-i18n="nav_why">لماذا نحن</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <!-- الأزرار -->
+            <div class="header-actions">
+                <button id="lang-switch" class="lang-btn">EN</button>
+                <a href="tel:0541608005" class="call-btn-desktop">
+                    <i class="fas fa-phone-alt"></i> 0541608005
+                </a>
+                <!-- زر المنيو (يظهر في الموبايل فقط) -->
+                <div class="menu-toggle" id="menu-open">
+                    <i class="fas fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- منيو الموبايل (مخفية افتراضياً وتنزل من فوق) -->
+    <div class="mobile-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="close-menu" id="menu-close"><i class="fas fa-times"></i></div>
+            <ul class="mobile-nav-links">
+                <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+                <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+                <li><a href="#why-us" data-i18n="nav_why">لماذا نحن</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1 data-i18n="hero_title">نظافة احترافية تجعل منزلك <span class="highlight">يلمع كالنجوم</span></h1>
+                <p data-i18n="hero_desc">بريت هوم هي خيارك الأول لخدمات تنظيف الخزانات، الكنب، السجاد، والأحواش. نستخدم أحدث التقنيات لنضمن لك بيئة صحية ونظافة تدوم طويلاً.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary" data-i18n="btn_discover">اكتشف خدماتنا</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+<section class="about" id="about">
+    <div class="container about-wrapper">
+        
+        <!-- الجانب الأيمن: الصورة مع خلفيات متحركة -->
+        <div class="about-image-side animate-on-scroll reveal-right">
+            <div class="floating-blob"></div> <!-- شكل مائي بيتحرك خلف الصورة -->
+            <div class="img-frame">
+                <img src="images/about.png" alt="Bright Home Cleaning" class="main-about-img">
+                <div class="shine-effect"></div> <!-- تأثير لمعان فوق الصورة -->
+            </div>
+            <!-- فقاعات زينة متحركة -->
+            <div class="bubble b1"></div>
+            <div class="bubble b2"></div>
+        </div>
+
+        <!-- الجانب الأيسر: المحتوى النصي -->
+        <div class="about-text-side animate-on-scroll reveal-left">
+            <div class="section-badge" data-i18n="about_sub">من نحن</div>
+            <h2 class="main-title">
+                <span class="line1" data-i18n="about_title_1">نحن بريت هوم..</span><br>
+                <span class="line2 highlight" data-i18n="about_title_2">الريادة في عالم النظافة</span>
+            </h2>
+            
+            <div class="text-content">
+                <p class="description" data-i18n="about_desc_1">
+                    بخبرة تمتد لسنوات في قلب المملكة، انطلقت <b>بريت هوم</b> لتكون الشريك الأمثل لكل منزل يبحث عن التميز والراحة. نحن لا نقوم بالتنظيف التقليدي، بل نستخدم أنظمة تعقيم وتطهير متطورة تضمن القضاء على 99% من البكتيريا بفضل أجهزتنا الألمانية الحديثة.
+                </p>
+                <p class="description" data-i18n="about_desc_2">
+                    فريقنا ليس مجرد عمالة، بل خبراء مدربون على أعلى مستويات الدقة والاحترافية، نؤمن بأن منزلك هو مملكتك الخاصة، ولذلك نتعامل مع كل ركن فيه بعناية فائقة واهتمام بالتفاصيل التي لا يراها الآخرون.
+                </p>
+            </div>
+
+            <!-- قائمة المميزات مع أنيميشن -->
+            <ul class="features-list">
+                <li style="--delay: 0.2s"><i class="fas fa-star"></i> <span data-i18n="f1">جودة تفوق التوقعات ومعايير فندقية.</span></li>
+                <li style="--delay: 0.4s"><i class="fas fa-shield-alt"></i> <span data-i18n="f2">مواد تنظيف آمنة تماماً ومصرحة عالمياً.</span></li>
+                <li style="--delay: 0.6s"><i class="fas fa-clock"></i> <span data-i18n="f3">التزام دقيق بالمواعيد وسرعة في الإنجاز.</span></li>
+            </ul>
+
+            <!-- الزر المتحرك -->
+            <div class="about-cta">
+                <a href="#contact" class="btn-animate-glow" data-i18n="btn_trust">
+                    <span>احجز خدمتك الآن</span>
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <!-- عنوان السكشن -->
+        <div class="services-header animate-on-scroll">
+            <h4 class="gold-text" data-i18n="ser_sub">خدماتنا الاحترافية</h4>
+            <h2 class="main-title-white" data-i18n="ser_title">نعتني بكل تفاصيل <span class="highlight-sky">منزلك</span></h2>
+            <p class="section-para" data-i18n="ser_desc_long">
+                نحن في بريت هوم نفخر بتقديم باقة متكاملة من حلول التنظيف والتعقيم المتطورة. نجمع بين الخبرة الطويلة وأحدث المعدات العالمية لنضمن لك جودة تفوق التوقعات، مع الالتزام التام بمعايير الصحة والسلامة الدولية.
+            </p>
+        </div>
+
+        <div class="services-container">
+            <!-- الخدمة 1 -->
+            <div class="service-box animate-on-scroll">
+                <div class="box-inner">
+                    <div class="box-front">
+                        <div class="icon-wrap"><i class="fas fa-home"></i></div>
+                        <h3 data-i18n="s1_t">التنظيف الشامل</h3>
+                        <p data-i18n="s1_short">حلول تنظيف عميقة للفلل، الشقق، والقصور من الداخل والخارج.</p>
+                        <div class="features-mini">
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_facades">واجهات</span></span>
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_floors">أرضيات</span></span>
+                        </div>
+                    </div>
+                    <div class="box-back">
+                        <h3 data-i18n="s1_t">التفاصيل</h3>
+                        <p data-i18n="s1_long">نستخدم تقنيات جلي الرخام، تنظيف النوافذ المرتفعة، وتلميع النجف والأرضيات الخشبية بمواد إيطالية تحافظ على بريق منزلك لفترات طويلة.</p>
+                        <a href="tel:0541608005" class="box-btn" data-i18n="order_now">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخدمة 2 -->
+            <div class="service-box animate-on-scroll">
+                <div class="box-inner">
+                    <div class="box-front">
+                        <div class="icon-wrap"><i class="fas fa-tint"></i></div>
+                        <h3 data-i18n="s2_t">تعقيم الخزانات</h3>
+                        <p data-i18n="s2_short">تنظيف وتعقيم الخزانات الأرضية والعلوية بأفضل المواد.</p>
+                        <div class="features-mini">
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_steril">تعقيم</span></span>
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_insul">عزل</span></span>
+                        </div>
+                    </div>
+                    <div class="box-back">
+                        <h3 data-i18n="s2_t">التفاصيل</h3>
+                        <p data-i18n="s2_long">نضمن لك مياه نقية خالية من الشوائب والبكتيريا من خلال 4 مراحل تنظيف: سحب الرواسب، غسيل الجدران، التطهير بالكلور، واختبار نقاء المياه.</p>
+                        <a href="tel:0541608005" class="box-btn" data-i18n="order_now">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخدمة 3 -->
+            <div class="service-box animate-on-scroll">
+                <div class="box-inner">
+                    <div class="box-front">
+                        <div class="icon-wrap"><i class="fas fa-couch"></i></div>
+                        <h3 data-i18n="s3_t">غسيل المفروشات</h3>
+                        <p data-i18n="s3_short">غسيل الكنب والسجاد والستائر بأجهزة البخار الحديثة.</p>
+                        <div class="features-mini">
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_steam">بخار</span></span>
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_scent">تعطير</span></span>
+                        </div>
+                    </div>
+                    <div class="box-back">
+                        <h3 data-i18n="s3_t">التفاصيل</h3>
+                        <p data-i18n="s3_long">تقنية البخار الجاف لدينا تخترق ألياف السجاد والكنب لتزيل أصعب البقع والروائح مع الحفاظ على الألوان، ونضيف لمسة تعطير تدوم لأيام.</p>
+                        <a href="tel:0541608005" class="box-btn" data-i18n="order_now">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخدمة 4 -->
+            <div class="service-box animate-on-scroll">
+                <div class="box-inner">
+                    <div class="box-front">
+                        <div class="icon-wrap"><i class="fas fa-seedling"></i></div>
+                        <h3 data-i18n="s4_t">الأحواش والحدائق</h3>
+                        <p data-i18n="s4_short">تنظيف وتنسيق المساحات الخارجية والحدائق الخاصة.</p>
+                        <div class="features-mini">
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_pest">رش مبيدات</span></span>
+                            <span><i class="fas fa-check"></i> <span data-i18n="f_yard">جلي أحواش</span></span>
+                        </div>
+                    </div>
+                    <div class="box-back">
+                        <h3 data-i18n="s4_t">التفاصيل</h3>
+                        <p data-i18n="s4_long">نعتني بجمال مدخل منزلك، من تنظيف الممرات وجلي بلاط الأحواش إلى التخلص من الحشرات المزعجة وتنسيق الأشجار ليكون منزلك لوحة متكاملة.</p>
+                        <a href="tel:0541608005" class="box-btn" data-i18n="order_now">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="why-us" id="why-us">
+    <div class="stars-container"></div> <!-- نجوم متحركة في الخلفية -->
+    
+    <div class="container">
+        <div class="why-header animate-on-scroll">
+            <h4 class="gold-badge" data-i18n="why_badge">سر تميزنا</h4>
+            <h2 class="why-title" data-i18n="why_main_title">ما الذي يجعل <span class="text-glow">بريت هوم</span> خيارك الأول؟</h2>
+        </div>
+
+        <div class="why-grid">
+            <!-- الكارت 1: الفريق -->
+            <div class="why-card animate-on-scroll" style="--i: 1">
+                <div class="why-icon">
+                    <i class="fas fa-user-tie"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 data-i18n="w1_t">نخبة من الخبراء</h3>
+                <p data-i18n="w1_d">طاقم عملنا ليسوا مجرد موظفين، بل فنيين مدربين على أعلى معايير الضيافة والنظافة الفندقية لضمان رقي التعامل ودقة الإنجاز.</p>
+                <div class="card-line"></div>
+            </div>
+
+            <!-- الكارت 2: المعدات -->
+            <div class="why-card animate-on-scroll" style="--i: 2">
+                <div class="why-icon">
+                    <i class="fas fa-microchip"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 data-i18n="w2_t">تكنولوجيا ألمانية</h3>
+                <p data-i18n="w2_d">نستثمر في أحدث ماكينات البخار والجلي الألمانية التي تضمن الوصول لأصعب الزوايا وتعقيمها بنسبة 100% دون المساس بجودة الأثاث.</p>
+                <div class="card-line"></div>
+            </div>
+
+            <!-- الكارت 3: الأمان -->
+            <div class="why-card animate-on-scroll" style="--i: 3">
+                <div class="why-icon">
+                    <i class="fas fa-leaf"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 data-i18n="w3_t">مواد صديقة للبيئة</h3>
+                <p data-i18n="w3_d">صحة عائلتك أولوية؛ لذا نستخدم حصرياً منظفات حيوية (Bio) آمنة تماماً على الأطفال والحيوانات الأليفة ومعتمدة من هيئات الصحة.</p>
+                <div class="card-line"></div>
+            </div>
+
+            <!-- الكارت 4: الالتزام -->
+            <div class="why-card animate-on-scroll" style="--i: 4">
+                <div class="why-icon">
+                    <i class="fas fa-history"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 data-i18n="w4_t">دقة في المواعيد</h3>
+                <p data-i18n="w4_d">نحن نقدر وقتك الثمين؛ نظام الجدولة الذكي لدينا يضمن وصول فريقنا في الموعد المحدد بالضبط مع سرعة فائقة في التنفيذ دون فوضى.</p>
+                <div class="card-line"></div>
+            </div>
+        </div>
+        
+        <!-- سطر الثقة -->
+        <div class="trust-footer animate-on-scroll">
+            <p data-i18n="trust_text">أكثر من 5000 منزل في المملكة يثقون بنا سنوياً</p>
+            <div class="trust-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container contact-container">
+        
+        <div class="contact-header animate-on-scroll">
+            <h4 class="gold-badge" data-i18n="contact_badge">تواصل مباشر</h4>
+            <h2 class="contact-title" data-i18n="contact_main_title">نحن هنا <span class="highlight-sky">لخدمتك</span> دائماً</h2>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- الكارت الأول: قنوات التواصل -->
+            <div class="contact-card info-card animate-on-scroll">
+                <h3 data-i18n="channels_title">قنوات التواصل</h3>
+                
+                <div class="numbers-stack">
+                    <!-- الرقم الأول -->
+                    <div class="number-box">
+                        <div class="num-val">0541608005</div>
+                        <div class="action-btns">
+                            <a href="tel:0541608005" class="act-btn call"><i class="fas fa-phone-alt"></i></a>
+                            <a href="https://wa.me/966541608005" target="_blank" class="act-btn chat"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- الرقم الثاني -->
+                    <div class="number-box">
+                        <div class="num-val">0568080754</div>
+                        <div class="action-btns">
+                            <a href="tel:0568080754" class="act-btn call"><i class="fas fa-phone-alt"></i></a>
+                            <a href="https://wa.me/966568080754" target="_blank" class="act-btn chat"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-contacts">
+                    <!-- الايميل اكتف -->
+                    <a href="mailto:bright.homy2026@gmail.com" class="other-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>bright.homy2026@gmail.com</span>
+                    </a>
+                    <!-- الموقع -->
+                    <div class="other-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="address_val">المملكة العربية السعودية</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكارت الثاني: الفورم -->
+            <div class="contact-card form-card animate-on-scroll">
+                <h3 data-i18n="form_title">اطلب الخدمة الآن</h3>
+                <form id="whatsapp-form">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label data-i18n="label_name">الاسم بالكامل</label>
+                    </div>
+                    <div class="input-group">
+                        <select id="service-type" required>
+                            <option value="" disabled selected data-i18n="label_service">اختر الخدمة</option>
+                            <option value="تنظيف شامل" data-i18n="s1_t">التنظيف الشامل</option>
+                            <option value="تعقيم خزانات" data-i18n="s2_t">تعقيم الخزانات</option>
+                            <option value="غسيل مفروشات" data-i18n="s3_t">غسيل المفروشات</option>
+                            <option value="جلي أحواش" data-i18n="s4_t">جلي أحواش</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="3" required placeholder=" "></textarea>
+                        <label data-i18n="label_msg">التفاصيل أو العنوان</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span data-i18n="send_btn">إرسال الطلب</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="main-footer">
+    <div class="container footer-grid">
+        <!-- العمود الأول: عن الشركة -->
+        <div class="footer-col about-col">
+            <h2 class="footer-logo" data-i18n="brand_name">بريت هوم</h2>
+            <p class="footer-desc" data-i18n="footer_about_desc">
+                الوجهة الأولى والخبراء المعتمدون في خدمات التنظيف والتعقيم الشامل بالمملكة العربية السعودية. نجمع بين الأمانة، السرعة، والجودة الفائقة لنمنحك منزلاً مشرقاً وصحياً.
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/966541608005"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- العمود الثاني: روابط سريعة -->
+        <div class="footer-col">
+            <h3 data-i18n="footer_links_title">روابط سريعة</h3>
+            <ul class="footer-links">
+                <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+                <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+                <li><a href="#why-us" data-i18n="nav_why">لماذا نحن</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+
+        <!-- العمود الثالث: خدماتنا -->
+        <div class="footer-col">
+            <h3 data-i18n="footer_services_title">خدماتنا</h3>
+            <ul class="footer-links">
+                <li data-i18n="s1_t">التنظيف الشامل</li>
+                <li data-i18n="s2_t">تعقيم الخزانات</li>
+                <li data-i18n="s3_t">غسيل المفروشات</li>
+                <li data-i18n="s4_t">جلي الأحواش</li>
+            </ul>
+        </div>
+
+        <!-- العمود الرابع: بيانات التواصل -->
+        <div class="footer-col contact-col">
+            <h3 data-i18n="footer_contact_title">تواصل معنا</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> 0541608005</p>
+                <p><i class="fas fa-phone-alt"></i> 0568080754</p>
+                <p><i class="fas fa-envelope"></i> bright.homy2026@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="address_val">المملكة العربية السعودية</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- الجزء السفلي: الحقوق والبرمجة -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copy-text">&copy; <span id="year"></span> <strong data-i18n="brand_name">بريت هوم</strong>. <span data-i18n="all_rights">جميع الحقوق محفوظة</span></p>
+            <p class="dev-text">
+    <span data-i18n="dev_by">تم التصميم والبرمجة بواسطة</span> 
+    <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank" class="dev-link">GMTWeb</a>
+</p>
+        </div>
+    </div>
+</footer>
+<div class="floating-actions">
+    <a href="https://wa.me/966541608005" class="float-btn whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:0541608005" class="float-btn phone">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
