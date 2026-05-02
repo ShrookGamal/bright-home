@@ -9,11 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="rtl">
-
-    <!-- Header العائم -->
     <header id="main-header">
         <div class="container header-content">
-            <!-- اللوجو -->
             <div class="logo-area">
                 <div class="logo-box" id="logo-click">
                     <img src="images/logo.png" alt="Bright Home" class="main-logo">
@@ -23,8 +20,6 @@
                     <small class="brand-sub" data-i18n="brand_sub">لخدمات التنظيف العامة</small>
                 </div>
             </div>
-
-            <!-- الناف بار (يظهر في اللابتوب فقط) -->
             <nav class="desktop-nav">
                 <ul class="nav-links">
                     <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
@@ -34,22 +29,17 @@
                     <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
                 </ul>
             </nav>
-
-            <!-- الأزرار -->
             <div class="header-actions">
                 <button id="lang-switch" class="lang-btn">EN</button>
                 <a href="tel:0541608005" class="call-btn-desktop">
                     <i class="fas fa-phone-alt"></i> 0541608005
                 </a>
-                <!-- زر المنيو (يظهر في الموبايل فقط) -->
                 <div class="menu-toggle" id="menu-open">
                     <i class="fas fa-bars-staggered"></i>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- منيو الموبايل (مخفية افتراضياً وتنزل من فوق) -->
     <div class="mobile-overlay" id="mobile-menu-overlay">
         <div class="mobile-menu-content">
             <div class="close-menu" id="menu-close"><i class="fas fa-times"></i></div>
@@ -62,8 +52,6 @@
             </ul>
         </div>
     </div>
-
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
@@ -78,23 +66,17 @@
             </div>
         </div>
     </section>
-    <!-- About Us Section -->
-<section class="about" id="about">
+    <section class="about" id="about">
     <div class="container about-wrapper">
-        
-        <!-- الجانب الأيمن: الصورة مع خلفيات متحركة -->
         <div class="about-image-side animate-on-scroll reveal-right">
-            <div class="floating-blob"></div> <!-- شكل مائي بيتحرك خلف الصورة -->
+            <div class="floating-blob"></div> 
             <div class="img-frame">
                 <img src="images/about.png" alt="Bright Home Cleaning" class="main-about-img">
-                <div class="shine-effect"></div> <!-- تأثير لمعان فوق الصورة -->
+                <div class="shine-effect"></div> 
             </div>
-            <!-- فقاعات زينة متحركة -->
             <div class="bubble b1"></div>
             <div class="bubble b2"></div>
         </div>
-
-        <!-- الجانب الأيسر: المحتوى النصي -->
         <div class="about-text-side animate-on-scroll reveal-left">
             <div class="section-badge" data-i18n="about_sub">من نحن</div>
             <h2 class="main-title">
@@ -110,15 +92,11 @@
                     فريقنا ليس مجرد عمالة، بل خبراء مدربون على أعلى مستويات الدقة والاحترافية، نؤمن بأن منزلك هو مملكتك الخاصة، ولذلك نتعامل مع كل ركن فيه بعناية فائقة واهتمام بالتفاصيل التي لا يراها الآخرون.
                 </p>
             </div>
-
-            <!-- قائمة المميزات مع أنيميشن -->
             <ul class="features-list">
                 <li style="--delay: 0.2s"><i class="fas fa-star"></i> <span data-i18n="f1">جودة تفوق التوقعات ومعايير فندقية.</span></li>
                 <li style="--delay: 0.4s"><i class="fas fa-shield-alt"></i> <span data-i18n="f2">مواد تنظيف آمنة تماماً ومصرحة عالمياً.</span></li>
                 <li style="--delay: 0.6s"><i class="fas fa-clock"></i> <span data-i18n="f3">التزام دقيق بالمواعيد وسرعة في الإنجاز.</span></li>
             </ul>
-
-            <!-- الزر المتحرك -->
             <div class="about-cta">
                 <a href="#contact" class="btn-animate-glow" data-i18n="btn_trust">
                     <span>احجز خدمتك الآن</span>
@@ -127,11 +105,9 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Services Section -->
-<section class="services" id="services">
+    </section>
+    <section class="services" id="services">
     <div class="container">
-        <!-- عنوان السكشن -->
         <div class="services-header animate-on-scroll">
             <h4 class="gold-text" data-i18n="ser_sub">خدماتنا الاحترافية</h4>
             <h2 class="main-title-white" data-i18n="ser_title">نعتني بكل تفاصيل <span class="highlight-sky">منزلك</span></h2>
@@ -139,9 +115,7 @@
                 نحن في بريت هوم نفخر بتقديم باقة متكاملة من حلول التنظيف والتعقيم المتطورة. نجمع بين الخبرة الطويلة وأحدث المعدات العالمية لنضمن لك جودة تفوق التوقعات، مع الالتزام التام بمعايير الصحة والسلامة الدولية.
             </p>
         </div>
-
         <div class="services-container">
-            <!-- الخدمة 1 -->
             <div class="service-box animate-on-scroll">
                 <div class="box-inner">
                     <div class="box-front">
@@ -160,8 +134,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- الخدمة 2 -->
             <div class="service-box animate-on-scroll">
                 <div class="box-inner">
                     <div class="box-front">
@@ -180,8 +152,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- الخدمة 3 -->
             <div class="service-box animate-on-scroll">
                 <div class="box-inner">
                     <div class="box-front">
@@ -200,8 +170,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- الخدمة 4 -->
             <div class="service-box animate-on-scroll">
                 <div class="box-inner">
                     <div class="box-front">
@@ -222,19 +190,16 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Why Choose Us Section -->
-<section class="why-us" id="why-us">
-    <div class="stars-container"></div> <!-- نجوم متحركة في الخلفية -->
+    </section>
+    <section class="why-us" id="why-us">
+    <div class="stars-container"></div> 
     
     <div class="container">
         <div class="why-header animate-on-scroll">
             <h4 class="gold-badge" data-i18n="why_badge">سر تميزنا</h4>
             <h2 class="why-title" data-i18n="why_main_title">ما الذي يجعل <span class="text-glow">بريت هوم</span> خيارك الأول؟</h2>
         </div>
-
         <div class="why-grid">
-            <!-- الكارت 1: الفريق -->
             <div class="why-card animate-on-scroll" style="--i: 1">
                 <div class="why-icon">
                     <i class="fas fa-user-tie"></i>
@@ -244,8 +209,6 @@
                 <p data-i18n="w1_d">طاقم عملنا ليسوا مجرد موظفين، بل فنيين مدربين على أعلى معايير الضيافة والنظافة الفندقية لضمان رقي التعامل ودقة الإنجاز.</p>
                 <div class="card-line"></div>
             </div>
-
-            <!-- الكارت 2: المعدات -->
             <div class="why-card animate-on-scroll" style="--i: 2">
                 <div class="why-icon">
                     <i class="fas fa-microchip"></i>
@@ -255,8 +218,6 @@
                 <p data-i18n="w2_d">نستثمر في أحدث ماكينات البخار والجلي الألمانية التي تضمن الوصول لأصعب الزوايا وتعقيمها بنسبة 100% دون المساس بجودة الأثاث.</p>
                 <div class="card-line"></div>
             </div>
-
-            <!-- الكارت 3: الأمان -->
             <div class="why-card animate-on-scroll" style="--i: 3">
                 <div class="why-icon">
                     <i class="fas fa-leaf"></i>
@@ -266,8 +227,6 @@
                 <p data-i18n="w3_d">صحة عائلتك أولوية؛ لذا نستخدم حصرياً منظفات حيوية (Bio) آمنة تماماً على الأطفال والحيوانات الأليفة ومعتمدة من هيئات الصحة.</p>
                 <div class="card-line"></div>
             </div>
-
-            <!-- الكارت 4: الالتزام -->
             <div class="why-card animate-on-scroll" style="--i: 4">
                 <div class="why-icon">
                     <i class="fas fa-history"></i>
@@ -278,31 +237,25 @@
                 <div class="card-line"></div>
             </div>
         </div>
-        
-        <!-- سطر الثقة -->
-        <div class="trust-footer animate-on-scroll">
+          <div class="trust-footer animate-on-scroll">
             <p data-i18n="trust_text">أكثر من 5000 منزل في المملكة يثقون بنا سنوياً</p>
             <div class="trust-stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
         </div>
     </div>
-</section>
-<section class="contact" id="contact">
+    </section>
+    <section class="contact" id="contact">
     <div class="container contact-container">
         
         <div class="contact-header animate-on-scroll">
             <h4 class="gold-badge" data-i18n="contact_badge">تواصل مباشر</h4>
             <h2 class="contact-title" data-i18n="contact_main_title">نحن هنا <span class="highlight-sky">لخدمتك</span> دائماً</h2>
         </div>
-
         <div class="contact-wrapper">
-            <!-- الكارت الأول: قنوات التواصل -->
             <div class="contact-card info-card animate-on-scroll">
                 <h3 data-i18n="channels_title">قنوات التواصل</h3>
-                
                 <div class="numbers-stack">
-                    <!-- الرقم الأول -->
                     <div class="number-box">
                         <div class="num-val">0541608005</div>
                         <div class="action-btns">
@@ -310,8 +263,6 @@
                             <a href="https://wa.me/966541608005" target="_blank" class="act-btn chat"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
-
-                    <!-- الرقم الثاني -->
                     <div class="number-box">
                         <div class="num-val">0568080754</div>
                         <div class="action-btns">
@@ -320,22 +271,17 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="other-contacts">
-                    <!-- الايميل اكتف -->
                     <a href="mailto:bright.homy2026@gmail.com" class="other-item">
                         <i class="fas fa-envelope"></i>
                         <span>bright.homy2026@gmail.com</span>
                     </a>
-                    <!-- الموقع -->
                     <div class="other-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span data-i18n="address_val">المملكة العربية السعودية</span>
                     </div>
                 </div>
             </div>
-
-            <!-- الكارت الثاني: الفورم -->
             <div class="contact-card form-card animate-on-scroll">
                 <h3 data-i18n="form_title">اطلب الخدمة الآن</h3>
                 <form id="whatsapp-form">
@@ -364,11 +310,9 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Footer Section -->
-<footer class="main-footer">
+    </section>
+    <footer class="main-footer">
     <div class="container footer-grid">
-        <!-- العمود الأول: عن الشركة -->
         <div class="footer-col about-col">
             <h2 class="footer-logo" data-i18n="brand_name">بريت هوم</h2>
             <p class="footer-desc" data-i18n="footer_about_desc">
@@ -380,8 +324,6 @@
                 <a href="https://wa.me/966541608005"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
-
-        <!-- العمود الثاني: روابط سريعة -->
         <div class="footer-col">
             <h3 data-i18n="footer_links_title">روابط سريعة</h3>
             <ul class="footer-links">
@@ -392,8 +334,6 @@
                 <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
             </ul>
         </div>
-
-        <!-- العمود الثالث: خدماتنا -->
         <div class="footer-col">
             <h3 data-i18n="footer_services_title">خدماتنا</h3>
             <ul class="footer-links">
@@ -403,8 +343,6 @@
                 <li data-i18n="s4_t">جلي الأحواش</li>
             </ul>
         </div>
-
-        <!-- العمود الرابع: بيانات التواصل -->
         <div class="footer-col contact-col">
             <h3 data-i18n="footer_contact_title">تواصل معنا</h3>
             <div class="contact-info">
@@ -415,8 +353,6 @@
             </div>
         </div>
     </div>
-
-    <!-- الجزء السفلي: الحقوق والبرمجة -->
     <div class="footer-bottom">
         <div class="container">
             <p class="copy-text">&copy; <span id="year"></span> <strong data-i18n="brand_name">بريت هوم</strong>. <span data-i18n="all_rights">جميع الحقوق محفوظة</span></p>
@@ -426,15 +362,15 @@
 </p>
         </div>
     </div>
-</footer>
-<div class="floating-actions">
-    <a href="https://wa.me/966541608005" class="float-btn whatsapp" target="_blank">
+    </footer>
+    <div class="fixed-floating-btns">
+    <a href="https://wa.me/966568080754" target="_blank" class="float-action-btn wa-bg">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="tel:0541608005" class="float-btn phone">
+    <a href="tel:0568080754" class="float-action-btn ph-bg">
         <i class="fas fa-phone-alt"></i>
     </a>
-</div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

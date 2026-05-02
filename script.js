@@ -73,7 +73,8 @@ const translations = {
         footer_links_title: "روابط سريعة",
         footer_services_title: "خدماتنا",
         footer_contact_title: "تواصل معنا",
-        all_rights: "جميع الحقوق محفوظة"
+        all_rights: "جميع الحقوق محفوظة",
+        dev_by: "تم التصميم والبرمجة بواسطة"
     },
     en: {
         brand_name: "Bright Home",
@@ -151,7 +152,6 @@ const translations = {
         footer_contact_title: "Contact Us",
         all_rights: "All Rights Reserved",
         dev_by: "Designed and Developed by"
-
     }
 };
 
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const service = document.getElementById('service-type').value;
             const msg = document.getElementById('message').value;
             const fullMsg = `مرحباً بريت هوم، أرغب في طلب خدمة:%0A- *الاسم:* ${name}%0A- *الخدمة:* ${service}%0A- *التفاصيل:* ${msg}`;
-            const phone = "966541608005";
+            const phone = "966568080754";
             window.open(`https://wa.me/${phone}?text=${fullMsg}`, '_blank');
         });
     }
@@ -285,46 +285,3 @@ document.addEventListener('DOMContentLoaded', () => {
         yearEl.textContent = new Date().getFullYear();
     }
 });
-
-const styleTwinkle = document.createElement('style');
-styleTwinkle.innerHTML = `
-    @keyframes twinkle {
-        0%, 100% { transform: scale(1); opacity: 0.3; }
-        50% { transform: scale(1.5); opacity: 1; }
-    }
-    .floating-btns {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        z-index: 9999;
-    }
-    .float-btn {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 25px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        transition: 0.3s;
-        text-decoration: none;
-    }
-    .float-btn.wa { background: #25d366; }
-    .float-btn.ph { background: #005596; }
-    .float-btn:hover { transform: scale(1.1) translateY(-5px); }
-    body.rtl .floating-btns { right: auto; left: 30px; }
-`;
-document.head.appendChild(styleTwinkle);
-
-const floatDiv = document.createElement('div');
-floatDiv.className = 'floating-btns';
-floatDiv.innerHTML = `
-    <a href="https://wa.me/966541608005" target="_blank" class="float-btn wa"><i class="fab fa-whatsapp"></i></a>
-    <a href="tel:0541608005" class="float-btn ph"><i class="fas fa-phone-alt"></i></a>
-`;
-document.body.appendChild(floatDiv);
